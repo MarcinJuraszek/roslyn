@@ -274,6 +274,7 @@ namespace Microsoft.CodeAnalysis.CSharp.UnitTests
             TestBinary(SyntaxKind.IsKeyword);
             TestBinary(SyntaxKind.AsKeyword);
             TestBinary(SyntaxKind.QuestionQuestionToken);
+            TestBinary(SyntaxKind.MattToken);
         }
 
         private void TestAssignment(SyntaxKind kind)
