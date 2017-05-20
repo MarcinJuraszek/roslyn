@@ -758,6 +758,7 @@ namespace Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax
                     {
                         TextWindow.AdvanceChar();
                         info.Kind = SyntaxKind.MattToken;
+                        break;
                     }
 
                     goto case 'a';

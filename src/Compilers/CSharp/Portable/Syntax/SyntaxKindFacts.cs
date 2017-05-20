@@ -616,6 +616,8 @@ namespace Microsoft.CodeAnalysis.CSharp
                     return SyntaxKind.LogicalAndExpression;
                 case SyntaxKind.BarBarToken:
                     return SyntaxKind.LogicalOrExpression;
+                case SyntaxKind.MattToken:
+                    return SyntaxKind.MattExpression;
                 default:
                     return SyntaxKind.None;
             }
@@ -1276,6 +1278,8 @@ namespace Microsoft.CodeAnalysis.CSharp
                     return "<?";
                 case SyntaxKind.XmlProcessingInstructionEndToken:
                     return "?>";
+                case SyntaxKind.MattToken:
+                    return "m@";
 
                 // compound
                 case SyntaxKind.BarBarToken:

@@ -8814,6 +8814,7 @@ tryAgain:
                     return Precedence.Shift;
                 case SyntaxKind.AddExpression:
                 case SyntaxKind.SubtractExpression:
+                case SyntaxKind.MattExpression:
                     return Precedence.Additive;
                 case SyntaxKind.MultiplyExpression:
                 case SyntaxKind.DivideExpression:
