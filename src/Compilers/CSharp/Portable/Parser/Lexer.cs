@@ -753,6 +753,15 @@ namespace Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax
 
                     goto default;
 
+                case 'm':
+                    if(TextWindow.PeekChar(1) == '@')
+                    {
+                        TextWindow.AdvanceChar();
+                        info.Kind = SyntaxKind.MattToken;
+                    }
+
+                    goto case 'a';
+
                 // All the 'common' identifier characters are represented directly in
                 // these switch cases for optimal perf.  Calling IsIdentifierChar() functions is relatively
                 // expensive.
@@ -768,7 +777,6 @@ namespace Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax
                 case 'j':
                 case 'k':
                 case 'l':
-                case 'm':
                 case 'n':
                 case 'o':
                 case 'p':
@@ -3985,6 +3993,9 @@ namespace Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax
                 case '-':
                     if (AdvanceIfMatches('-')) info.Kind = SyntaxKind.MinusMinusToken;
                     else info.Kind = SyntaxKind.MinusToken;
+                    break;
+                case 'm':
+                    if (AdvanceIfMatches('@')) info.Kind = SyntaxKind.MattToken;
                     break;
             }
 

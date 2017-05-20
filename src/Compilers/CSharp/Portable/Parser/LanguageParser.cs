@@ -10195,6 +10195,7 @@ tryAgain:
                 case SyntaxKind.MinusGreaterThanToken:
                 case SyntaxKind.QuestionQuestionToken:
                 case SyntaxKind.EndOfFileToken:
+                case SyntaxKind.MattToken:
                     return false;
                 default:
                     return true;
