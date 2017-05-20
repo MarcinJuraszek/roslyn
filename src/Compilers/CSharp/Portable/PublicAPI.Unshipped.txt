@@ -7,3 +7,7 @@ static Microsoft.CodeAnalysis.CSharp.LanguageVersionFacts.ToDisplayString(this M
 static Microsoft.CodeAnalysis.CSharp.LanguageVersionFacts.TryParse(this string version, out Microsoft.CodeAnalysis.CSharp.LanguageVersion result) -> bool
 static Microsoft.CodeAnalysis.CSharp.SyntaxFacts.IsReservedTupleElementName(string elementName) -> bool
 static Microsoft.CodeAnalysis.CSharp.SyntaxFacts.TryGetInferredMemberName(this Microsoft.CodeAnalysis.SyntaxNode syntax) -> string
+
+
+Microsoft.CodeAnalysis.CSharp.SyntaxKind.MattExpression = 9100 -> Microsoft.CodeAnalysis.CSharp.SyntaxKind
+Microsoft.CodeAnalysis.CSharp.SyntaxKind.MattToken = 9101 -> Microsoft.CodeAnalysis.CSharp.SyntaxKind

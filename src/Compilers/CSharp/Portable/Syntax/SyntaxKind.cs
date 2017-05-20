@@ -563,5 +563,9 @@ namespace Microsoft.CodeAnalysis.CSharp
         RefExpression = 9050,
         RefType = 9051,
         ThrowExpression = 9052,
+
+        // Matt operator!
+        MattExpression = 9100,
+        MattToken = 9101,
     }
 }
