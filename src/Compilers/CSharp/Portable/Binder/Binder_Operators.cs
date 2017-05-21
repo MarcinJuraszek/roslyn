@@ -384,6 +384,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case SyntaxKind.ExclusiveOrExpression:
                 case SyntaxKind.LeftShiftExpression:
                 case SyntaxKind.RightShiftExpression:
+                case SyntaxKind.MattExpression:
                     return true;
             }
             return false;
@@ -1862,6 +1863,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case SyntaxKind.ExclusiveOrExpression: return BinaryOperatorKind.Xor;
                 case SyntaxKind.LogicalAndExpression: return BinaryOperatorKind.LogicalAnd;
                 case SyntaxKind.LogicalOrExpression: return BinaryOperatorKind.LogicalOr;
+                case SyntaxKind.MattExpression: return BinaryOperatorKind.Matt;
                 default: throw ExceptionUtilities.UnexpectedValue(kind);
             }
         }

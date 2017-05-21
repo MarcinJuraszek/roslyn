@@ -992,6 +992,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case WellKnownMemberNames.TrueOperatorName: return SyntaxKind.TrueKeyword;
                 case WellKnownMemberNames.UnaryNegationOperatorName: return SyntaxKind.MinusToken;
                 case WellKnownMemberNames.UnaryPlusOperatorName: return SyntaxKind.PlusToken;
+                case WellKnownMemberNames.MattOperatorName: return SyntaxKind.MattToken;
                 default:
                     return SyntaxKind.None;
             }

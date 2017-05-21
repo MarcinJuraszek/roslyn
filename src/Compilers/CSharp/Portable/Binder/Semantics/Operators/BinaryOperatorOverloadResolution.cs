@@ -115,6 +115,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case BinaryOperatorKind.LessThanOrEqual:
                 case BinaryOperatorKind.LogicalAnd:
                 case BinaryOperatorKind.LogicalOr:
+                case BinaryOperatorKind.Matt:
                     return;
 
                 case BinaryOperatorKind.Addition:
@@ -372,6 +373,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case BinaryOperatorKind.LeftShift:
                 case BinaryOperatorKind.LogicalAnd:
                 case BinaryOperatorKind.LogicalOr:
+                case BinaryOperatorKind.Matt:
                     return;
             }
 

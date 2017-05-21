@@ -81,6 +81,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case SyntaxKind.GreaterThanEqualsToken: return WellKnownMemberNames.GreaterThanOrEqualOperatorName;
                 case SyntaxKind.GreaterThanGreaterThanToken: return WellKnownMemberNames.RightShiftOperatorName;
                 case SyntaxKind.ExclamationEqualsToken: return WellKnownMemberNames.InequalityOperatorName;
+                case SyntaxKind.MattToken: return WellKnownMemberNames.MattOperatorName;
                 default:
                     return null;
             }
@@ -179,6 +180,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                 case BinaryOperatorKind.RightShift: return WellKnownMemberNames.RightShiftOperatorName;
                 case BinaryOperatorKind.Subtraction: return WellKnownMemberNames.SubtractionOperatorName;
                 case BinaryOperatorKind.Xor: return WellKnownMemberNames.ExclusiveOrOperatorName;
+                case BinaryOperatorKind.Matt: return WellKnownMemberNames.MattOperatorName;
                 default:
                     throw ExceptionUtilities.UnexpectedValue(kind & BinaryOperatorKind.OpMask);
             }

@@ -184,6 +184,11 @@ namespace Microsoft.CodeAnalysis
         public const string LogicalAndOperatorName = "op_LogicalAnd";
 
         /// <summary>
+        /// The name assigned to the Matt operator.
+        /// </summary>
+        public const string MattOperatorName = "op_Matt";
+
+        /// <summary>
         /// The name assigned to the Modulus operator.
         /// </summary>
         public const string ModulusOperatorName = "op_Modulus";

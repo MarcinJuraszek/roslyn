@@ -313,12 +313,15 @@ namespace Microsoft.CodeAnalysis.CSharp
         And = 0x00001D00,
         Xor = 0x00001E00,
         Or = 0x00001F00,
+        Matt = 0x00002000,
 
         Lifted = UnaryOperatorKind.Lifted,
         Logical = UnaryOperatorKind._Logical,
         Checked = UnaryOperatorKind.Checked,
 
         Error = 0x00000000,
+
+        IntMatt = Int | Matt,
 
         IntMultiplication = Int | Multiplication,
         UIntMultiplication = UInt | Multiplication,

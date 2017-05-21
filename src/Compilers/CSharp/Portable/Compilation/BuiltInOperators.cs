@@ -293,6 +293,7 @@ namespace Microsoft.CodeAnalysis.CSharp
                     ImmutableArray.Create<BinaryOperatorSignature>(GetSignature(BinaryOperatorKind.LogicalBoolAnd)), //and
                     ImmutableArray<BinaryOperatorSignature>.Empty, //xor
                     ImmutableArray.Create<BinaryOperatorSignature>(GetSignature(BinaryOperatorKind.LogicalBoolOr)), //or
+                    ImmutableArray<BinaryOperatorSignature>.Empty, //matt
                 };
 
                 var nonLogicalOperators = new ImmutableArray<BinaryOperatorSignature>[]
@@ -555,6 +556,10 @@ namespace Microsoft.CodeAnalysis.CSharp
                         (int)BinaryOperatorKind.LiftedLongOr,
                         (int)BinaryOperatorKind.LiftedULongOr,
                         (int)BinaryOperatorKind.LiftedBoolOr,
+                    }),
+                    GetSignaturesFromBinaryOperatorKinds(new []
+                    {
+                        (int)BinaryOperatorKind.IntMatt,
                     }),
                 };
 
